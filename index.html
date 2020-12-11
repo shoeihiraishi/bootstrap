@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sample</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="page-2.2.1">
+        <div class="container">
+            <div class="row">
+                <div class="col">１列目</div>
+                <div class="col">２列目</div>
+                <div class="col">３列目</div>
+            </div>
+            <div class="row">
+                <div class="col">１列目</div>
+                <div class="col">２列目</div>
+                <div class="col">３列目</div>
+            </div>
+        </div>
+        <div class="container-fulid">
+            <div class="row">
+                <div class="col">１列目</div>
+                <div class="col">２列目</div>
+                <div class="col">３列目</div>
+            </div>
+            <div class="row">
+                <div class="col">１列目</div>
+                <div class="col">２列目</div>
+                <div class="col">３列目</div>
+            </div>
+        </div>
+        <!--/page-2.2.1-->
+    </section>
+    <section class="page-2.2.2">
+        <h3>１列カラム*12</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+                <div class="col-1">col-1</div>
+            </div>
+        </div>
+        <h3>２列カラム+４列カラム+６列カラム</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">col-2</div>
+                <div class="col-4">col-4</div>
+                <div class="col-6">col-6</div>
+            </div>
+        </div>
+        <h3>５列カラム+７列カラム</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-5">col-5</div>
+                <div class="col-7">col-7</div>
+            </div>
+        </div>
+    </section>
+    <!--/page-2.2.2-->
+    <section class="page-2.2.3">
+        <h3>1カラムのみ幅を指定</h3>
+        <div class="continer">
+            <div class="row">
+                <div class="col">col</div>
+                <div class="col-6">col-6</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+    </section>
+    <!--/page-2.2.3-->
+    <section class="page-2.3.1-2.3.2">
+        <h3>ブレイクポイントによる切替</h3>
+        <div class="conrtainer">
+            <div class="row">
+                <div class="col-sm-8">col-sm-8</div>
+                <div class="col-sm-4">col-sm-4</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">col-sm</div>
+                <div class="col-sm">col-sm</div>
+                <div class="col-sm">col-sm</div>
+            </div>
+        </div>
+    </section>
+    <!--/page-2.3.1-2.3.2-->
+    <section class="page-2.3.3">
+        <h3>可変幅カラム</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col">col</div>
+                <div class="col-auto">col-auto:コンテンツによって幅が可変</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">col</div>
+                <div class="col">col-md-auto:Midium以上でコンテンツによって幅が可変</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+    </section>
+    <!--/page-2.3.3-->
+    <section class="page-2.3.4">
+        <h3>等幅カラムを複数行に分割</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="w-100"></div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+    </section>
+    <!--/page-2.3.4-->
+    <section class="page-2.3.5">
+        <h3>行の分割をブレイクポイントで切替</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="w-100 d-none d-md-block"></div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+    </section>
+    <!--/page-2.3.5-->
+    <section class="page-2.3.6">
+        <h3>複数クラスの組み合わせ</h3>
+        <p>ベース：全幅＋半幅カラム、Midium以上：８列＋４列カラム</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">col-12とcol-md-8</div>
+                <div class="col-6 col-md-4">col-6とcol-md-4</div>
+            </div>
+        </div>
+        <p>ベース：半幅カラム＊３、Midium以上：４列カラム＊３</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4">col-6とcol-md-4</div>
+                <div class="col-6 col-md-4">col-6とcol-md-4</div>
+                <div class="col-6 col-md-4">col-6とcol-md-4</div>
+            </div>
+        </div>
+    </section>
+    <!--/page-2.3.6------------------------------------------------check------------>
+    <section class="page-2.4.1">
+        <h3>垂直上揃え：align-items-start</h3>
+        <div class="container height-100">
+            <div class="row align-items-start">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+        <h3>垂直中央揃え：align-items-center</h3>
+        <div class="container height-100">
+            <div class="row align-items-center">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+        <h3>垂直下揃え：align-items-end</h3>
+        <div class="container height-100">
+            <div class="row align-items-end">
+                <div class="col">col</div>
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+    </section>
+    <!--/page-2.4.1--------------------------------------------------check----------->
+    <section class="page-2.4.2">
+        <h3>カラム単位での垂直方向の整列</h3>
+        <div class="cotainer">
+            <div class="row height-100">
+                <div class="col align-self-start">align-self-start</div>
+                <div class="col align-self-center">align-self-center</div>
+                <div class="col align-self-end">align-self-end</div>
+            </div>
+        </div>
+    </section>
+    <!--/page-2.4.2-->
+    <section class="page-2.4.3">
+        <h3>水平方向の整列</h3>
+        <div class="container">
+            <div class="row justify-content-start">
+                <div class="col-4">col-4</div>
+                <div class="col-4">col-4</div>
+            </div>
+        </div>
+        <h3>水平中央揃え:justify-content:flex-center</h3>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-4">col-4</div>
+                <div class="col-4">col-4</div>
+            </div>
+        </div>
+        <h3>水平右揃え:justify-content:flex-end</h3>
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-4">col-4</div>
+                <div class="col-4">col-4</div>
+                <div class="col-4">col-4</div>
+            </div>
+        </div>
+        <h3>等間隔に配置:justify-content:space-around</h3>
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-4">col-4</div>
+                <div class="col-4">col-4</div>
+                <div class="col-4">col-4</div>
+            </div>
+        </div>
+        <h3>両橋から均等に配置:justify-content:space-between</h3>
+        <div class="row jyustify-content-between">
+            <div class="col-4">col-4</div>
+            <div class="col-4">col-4</div>
+            <div class="col-4">col-4</div>
+        </div>
+    </section>
+    <!--/page-2.4.3-->
+    <section class="page-.2.4.4">
+        <h3>ガターを削除したからカラム</h3>
+        <p>no-guttersありの場合</p>
+        <div class="cotnainer">
+            <div class="row no-gutters">
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+        <p>no-guttersなしの場合</p>
+        <div class="cotnainer">
+            <div class="row">
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+        <p>no-guttersありの場合</p>
+        <div class="cotnainer">
+            <div class="row">
+                <div class="col">col</div>
+                <div class="col">col</div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+    <style>
+        .height-100 {
+            background-color: darkgrey;
+            height: 100px;
+        }
+
+        .row {
+            background-color: darkgoldenrod;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
