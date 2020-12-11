@@ -242,30 +242,90 @@
     <section class="page-.2.4.4">
         <h3>ガターを削除したからカラム</h3>
         <p>no-guttersありの場合</p>
-        <div class="cotnainer">
+        <div class="container">
             <div class="row no-gutters">
                 <div class="col">col</div>
                 <div class="col">col</div>
             </div>
         </div>
         <p>no-guttersなしの場合</p>
-        <div class="cotnainer">
+        <div class="container">
             <div class="row">
                 <div class="col">col</div>
                 <div class="col">col</div>
             </div>
         </div>
-        <p>no-guttersありの場合</p>
-        <div class="cotnainer">
-            <div class="row">
-                <div class="col">col</div>
-                <div class="col">col</div>
-            </div>
+        <p>コンテナなし、no-guttersありの場合</p>
+        <div class="row no-gutters">
+            <div class="col">col</div>
+            <div class="col">col</div>
         </div>
-
-
     </section>
-
+    <!--/page-2.4.4-->
+    <section class="page-2.4.5">
+        <h3>カラムの折り返し</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-9">col-9</div>
+                <div class="col-4"><br>
+                    ９列＋４列＝１３列。このカラムで１２列を超えるため、新しい行に折り返される</div>
+                <div class="col-6"><br>
+                    ４列＋６列＝１０列。このカラムは１２列以内に収まっているため、新しい行内に継続される</div>
+            </div>
+        </div>
+    </section>
+    <!--/page-2.4.5-->
+    <section class="page-2.5.1">
+        <h3>oreder-*クラスで並べ替え</h3>
+        <p>コンテンツの並べ替え</p>
+        <div class="container">
+            <div class="row">
+                <div class="col">第１のカラム（順序指定なし）</div>
+                <div class="col order-12">第２のカラム（順序指定は１２）</div>
+                <div class="col order-1">第３のカラム（順序指定は１）</div>
+            </div>
+        </div>
+        <p>コンテンツの並べ替え</p>
+        <div class="conteiner">
+            <div class="row">
+                <div class="col">第１のカラム（順序指定なし）</div>
+                <div class="col">第２のカラム（順序指定なし）</div>
+                <div class="col order-first">第３のカラム（順序指定は１）</div>
+            </div>
+        </div>
+    </section>
+    <!--/page-2.5.1-->
+    <section class="page-2.5.2">
+        <h3>カラムのオフセット</h3>
+        <p>オフセット用クラスによるカラムのオフセット</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">col-md-4</div>
+                <div class="col-md-4 offset-md-4">col-md-4とoffset-md-4</div>
+            </div>
+        </div>
+        <p>オフセットのリセット</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 col-md-6">col-sm-5とcol-md-6</div>
+                <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0">col-sm-5とoffset-sm-2とcol-md-6とoffset-md-0</div>
+            </div>
+        </div>
+    </section>
+    <!--/page-2.5.2----------------------------------check-------->
+    <section class="page-2.5.3">
+        <h3>グリットレイアウトの入れ子</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">第一階層：col-sm-9</div>
+                <div class="row">
+                    <div class="col-8 col-sm-6">第二階層：col-8とcol-sm-6</div>
+                    <div class="col-4 col-sm-6">第二階層：col-4とcol-sm-6</div>
+                </div>
+            </div>
+            <div class="col-sm-3">第一階層：col-sm-3</div>
+        </div>
+    </section><!--/page-2.5.3-------------------------check------->
 
 
 
@@ -276,7 +336,7 @@
         }
 
         .row {
-            background-color: darkgoldenrod;
+            background-color: grey;
         }
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
