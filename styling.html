@@ -138,7 +138,7 @@
 
     <h3>●サンプル出力</h3>
     <samp>This text is meant to be treated as sample output from a computer program.</samp>
-    <p>This text is meant to be treated as sample output from a computer program.</p>
+    <p><mark>default</mark> This text is meant to be treated as sample output from a computer program.</p>
     <h2>画像</h2>
     <h3>●レスポンシブ画像</h3>
     <h3 class="mb-4">レスポンシブ画像（img-fluid）</h3>
@@ -152,8 +152,558 @@
     </div>
     <style>
         .cleafix img {
-            width: 30%;        }
+            width: 30%;
+        }
+
+        .utility {
+            clear: both;
+        }
     </style>
+    <h3 class="utility">●textユーティリティーによる位置合わせ</h3>
+    <div class="text-center"><img src="img/sample-s.jpg" alt="中央揃え画像"></div>
+    <h3>●spacingユーティリティのよる位置合わせ</h3>
+    <img src="img/sample-s.jpg" alt="中央揃え画像" class="rounded d-block mx-auto">
+    <h3>●テーブルの基本スタイリング</h3>
+    <table class="table">
+        <thead>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>●暗色テーブル</h3>
+    <table class="table table-dark">
+        <thead>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>●テーブルヘッドのオプション</h3>
+    <table class="table">
+        <thead class="thead-dark">
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+        </tbody>
+        <thead class="thead-light">
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" class="thead-light">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>●縞模様のテーブル</h3>
+    <table class="table table-striped">
+        <thead>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>●罫線付きのテーブル</h3>
+    <table class="table table-bordered">
+        <thead>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>●罫線なしのテーブル</h3>
+    <table class="table table-borderless">
+        <thead>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>●テーブル行のマウスオーバー表示</h3>
+    <table class="table table-hover">
+        <thead>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>●テーブルのコンパクト化</h3>
+    <table class="table table-sm">
+        <thead>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>●テーブル行、セルの色つけ</h3>
+    <table class="table">
+        <thead>
+            <th scope="col">背景色用のクラス</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr class="table-active">
+                <th scope="row">table-active</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr class="table-primary">
+                <th scope="row">table-primary</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr class="table-secondary">
+                <th scope="row">table-secondary</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr class="table-success">
+                <th scope="row">table-success</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr class="table-danger">
+                <th scope="row">table-danger</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr class="table-warning">
+                <th scope="row">table-warning</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr class="table-info">
+                <th scope="row">table-info</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr class="table-light">
+                <th scope="row">table-light</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr class="table-dark">
+                <th scope="row">table-dark</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>●個々のセルに色を付ける</h3>
+    <table class="table">
+        <tr>
+            <th>th （標準）</th>
+            <th class="table-active">th.table-active</th>
+        </tr>
+        <tr>
+            <td class="table-primary">table-primary</td>
+            <td class="table-secondary">table-secondary</td>
+        </tr>
+        <tr>
+            <td class="table-success">table-success</td>
+            <td class="table-danger">table-danger</td>
+        </tr>
+        <tr>
+            <td class="table-warning">table-warning</td>
+            <td class="table-info">table-info</td>
+        </tr>
+        <tr>
+            <td class="table-light">table-light</td>
+            <td class="table-dark">table-dark</td>
+        </tr>
+    </table>
+    <h3>●colorユーティリティーで色をつける</h3>
+    <table class="table table-dark">
+        <thead>
+            <th scope="col">colorユーティリティー</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+            <th scope="col">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">なし（標準）</th>
+                <th scope="row">データセル</th>
+                <th scope="row">データセル</th>
+                <th scope="row">データセル</th>
+            </tr>
+            <tr class="bg-primary">
+                <th scope="row">bg-primary</th>
+                <th scope="row">データセル</th>
+                <th scope="row">データセル</th>
+                <th scope="row">データセル</th>
+            </tr>
+            <tr class="bg-success">
+                <th scope="row">bg-success</th>
+                <th scope="row">データセル</th>
+                <th scope="row">データセル</th>
+                <th scope="row">データセル</th>
+            </tr>
+            <tr class="bg-warning">
+                <th scope="row">bg-warning</th>
+                <th scope="row">データセル</th>
+                <th scope="row">データセル</th>
+                <th scope="row">データセル</th>
+            </tr>
+            <tr class="bg-danger">
+                <th scope="row">bg-danger</th>
+                <th scope="row">データセル</th>
+                <th scope="row">データセル</th>
+                <th scope="row">データセル</th>
+            </tr>
+            <tr class="bg-info">
+                <th scope="row">bg-info</th>
+                <th scope="row">データセル</th>
+                <th scope="row">データセル</th>
+                <th scope="row">データセル</th>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <h3>●colorユーティリティーで個々のセルに色を付ける</h3>
+        <tr>
+            <th>th（標準)</th>
+            <th class="bg-primary">th.bg-primary</th>
+        </tr>
+        <tr>
+            <th class="bg-success">th.bg-success</th>
+            <th class="bg-warning">th.bg-warning</th>
+        </tr>
+        <tr>
+            <th class="bg-danger">th.bg-danger</th>
+            <th class="bg-info">th. bg-info</th>
+        </tr>
+    </table>
+    <h3>●キャプション</h3>
+    <table class="table">
+        <caption>このテーブルのキャプション</caption>
+        <thead>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>データセル</td>
+                <td>データセル</td>
+                <td>データセル</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>●レスポンシブ対応のテーブル</h3>
+    <div class="table-responsive">
+        <table class="table">
+            <caption>レスポンシブ対応テーブル(table-responsive)</caption>
+            <thead>
+                <th scope="row">見出しセル</th>
+                <th scope="row">見出しセル</th>
+                <th scope="row">見出しセル</th>
+                <th scope="row">見出しセル</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">見出しセル</th>
+                    <td>見出しセル</td>
+                    <td>見出しセル</td>
+                    <td>見出しセル</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <table class="table">
+        <caption>標準テーブル(table)</caption>
+        <thead>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>見出しセル</td>
+                <td>見出しセル</td>
+                <td>見出しセル</td>
+            </tr>
+        </tbody>
+    </table>
+<p>ブレイクポイントに応じたレスポンシブ対応テーブル</p>
+<div class="table-responsive-sm">
+    <caption>S</caption>
+    <table class="table">
+        <thead>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>見出しセル</td>
+                <td>見出しセル</td>
+                <td>見出しセル</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="table-responsive-md">
+    <caption>M</caption>
+    <table class="table">
+        <thead>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>見出しセル</td>
+                <td>見出しセル</td>
+                <td>見出しセル</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="table-responsive-lg">
+    <caption>L</caption>
+    <table class="table">
+        <thead>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>見出しセル</td>
+                <td>見出しセル</td>
+                <td>見出しセル</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="table-responsive-xl">
+    <caption>XL</caption>
+    <table class="table">
+        <thead>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+            <th scope="row">見出しセル</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">見出しセル</th>
+                <td>見出しセル</td>
+                <td>見出しセル</td>
+                <td>見出しセル</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 
 
