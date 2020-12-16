@@ -6,6 +6,9 @@
     <title>Sample</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--new-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 </head>
 
 <body>
@@ -408,19 +411,278 @@
             <a href="#" class="btn btn-info">btn</a>
         </div>
     </div>
+    <p>カードにナビゲーションを組み込む</p>
+    <div class="card">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item"><a href="#" class="nav-link active">アクティブ</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">リンク</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">リンク</a></li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">title</h4>
+            <p class="card-text">text</p>
+        </div>
+    </div>
+    <p>ピル方のナビゲーション</p>
+    <div class="card">
+        <div class="card-heder">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item"><a href="#" class="nav-link active">アクティブ</a></li>
+                <li class="navitem"><a href="" class="nav-link">link</a></li>
+                <li class="navitem"><a href="" class="nav-link">link</a></li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">title</h4>
+            <p class="card-text">text</p>
+        </div>
+    </div>
+    <p>カードの画像とテキストを重ね合わせる</p>
+    <div class="card" style="max-width:25rem;">
+        <img src="img/sample-s.jpg" alt="" class="card-img">
+        <div class="card-img-overlay">
+            <h4 class="card-title">title</h4>
+            <p class="card-text">text</p>
+        </div>
+    </div>
+    <p>カードをレイアウトする</p>
+    <div class="card-group">
+        <div class="card">
+            <img src="img/sample-s.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">title</h4>
+                <p class="card-text">text</p>
+            </div>
+            <div class="card-footer">footer</div>
+        </div>
+        <div class="card">
+            <img src="img/sample-s.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">title</h4>
+                <p class="card-text">text</p>
+            </div>
+            <div class="card-footer">footer</div>
+        </div>
+        <div class="card">
+            <img src="img/sample-s.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">title</h4>
+                <p class="card-text">text</p>
+            </div>
+            <div class="card-footer">footer</div>
+        </div>
+    </div>
+    <p>カードデッキによるレイアウト</p>
+    <div class="card-deck">
+        <div class="card">
+            <img src="img/sample-s.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-text">text</h4>
+                <p class="card-text">text</p>
+            </div>
+            <div class="card-footer">footer</div>
+        </div>
+        <div class="card">
+            <img src="img/sample-s.jpg" alt="" class="card-img-top">
+            <div class="card-body bg-info">
+                <h4 class="card-text">text</h4>
+                <p class="card-text">text</p>
+            </div>
+            <div class="card-footer">footer</div>
+        </div>
+        <div class="card bg-warning border-dark">
+            <img src="img/sample-s.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-text">text</h4>
+                <p class="card-text">
+                    texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+                </p>
+            </div>
+            <div class="card-footer bg-secondary">footer</div>
+        </div>
+    </div>
+    <p>カードカラムによるレイアウト</p>
+    <div class="card-columns">
+        <div class="card">
+            <img src="img/sample-s.jpg" alt="" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-titel">1</h4>
+                <p class="card-text">texttexttexttexttexttexttext</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">2</h4>
+                <p class="card-text">texttexttexttext</p>
+                <small class="card-text text-muted">dummydummy</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/sample-s.jpg" alt="" class="card-img-top">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">3</h4>
+            <p class="card-text">texttexttexttexttexttexttexttexttexttexttexttext</p>
+            <small class="card-text text-muted">dummydummydummy</small>
+        </div>
+        <div class="card text-center">
+            <img src="img/sample-s.jpg" alt="" class="card-img-top">
+            <div class="card-img-overlay">
+                <h4 class="card-title">4</h4>
+                <strong class="card-text text-muted">texttexttexttexttexttexttexttexttexttext</strong>
+            </div>
+        </div>
+        <div class="card text-center">
+            <div class="card-body">
+                <h4 class="card-title">5</h4>
+                <p class="card-text">text</p>
+                <small class="card-text text-muted">dummydummydummy</small>
+            </div>
+            <div class="card">
+                <img src="img/sample-s.jpg" alt="" class="card-img">
+                <div class="card-img-overlay">
+                    <h4 class="card-title">6</h4>
+                </div>
+            </div>
+        </div>
+        <div class="card text-right">
+            <div class="card-body">
+                <h4 class="card-title">7</h4>
+                <p class="card-text">texttexttext</p>
+                <small class="card-text text-muted">dummydummy</small>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">8</h4>
+                <p class="card-text">text</p>
+                <small class="card-text text-muted">dummy</small>
+            </div>
+        </div>
+    </div>
+    <h3>メディアオブジェクト</h3>
+    <p>基本的な使用例</p>
+    <div class="media">
+        <img src="img/sample-s.jpg" alt="" class="mr-3" style="max-width:10rem;">
+        <div class="media-body">
+            <h5>media object</h5>
+            <p>この文章はダミーです</p>
+        </div>
+    </div>
+    <p>メディアオブジェクトの入れ子</p>
+    <div class="media">
+        <img src="img/sample-s.jpg" alt="" class="mr-3" style="max-width:10rem">
+        <div class="media-body">
+            <h5>media object</h5>
+            <p>この文章はダミーです</p>
+            <div class="media mt-3">
+                <a href="#"><img href="img/sample-s.jpg" class="mr-3" alt=""></a>
+                <div class="media-body">
+                    <h5>media object</h5>
+                    <p>この文章はダミーです</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>メディアの位置合わせ</p>
+    <div class="media">
+        <img src="img/sample-s.jpg" alt="" class="align-self-start mr-3 " style="max-width:10rem">
+        <div class="media-body">
+            <h5>media</h5>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+        </div>
+    </div>
+    <div class="media">
+        <img src="img/sample-s.jpg" alt="" class="align-self-center mr-3 " style="max-width:10rem">
+        <div class="media-body">
+            <h5>media</h5>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+        </div>
+    </div>
+    <div class="media">
+        <img src="img/sample-s.jpg" alt="" class="align-self-end mr-3 " style="max-width:10rem">
+        <div class="media-body">
+            <h5>media</h5>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+        </div>
+    </div>
+    <p>メディアオブジェクトの並び替え</p>
+    <div class="media">
+        <img src="img/sample-s.jpg" alt="" class="mr-3" style="max-width:10rem">
+        <div class="media-body">
+            <h5>通常配置</h5>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+        </div>
+    </div>
+    <hr>
+    <div class="media">
+        <img src="img/sample-s.jpg" alt="" class="mr-3 order-2" style="max-width:10rem">
+        <div class="media-body order-1">
+            <h5>orderによる並び替え</h5>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+        </div>
+    </div>
+    <p>メディアオブジェクトをリストに組み込む</p>
+    <ul class="list-unstyled">
+        <li class="media mb-4">
+            <img src="img/sample-s.jpg" alt="" class="mr-3" style="max-width:10rem">
+            <div class="media-body">
+                <h5>title</h5>
+                <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+                <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+                <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            </div>
+        </li>
+        <li class="media mb-4">
+            <img src="img/sample-s.jpg" alt="" class="mr-3" style="max-width:10rem">
+            <div class="media-body">
+                <h5>title</h5>
+                <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+                <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+                <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            </div>
+        </li>
+        <li class="media mb-4">
+            <img src="img/sample-s.jpg" alt="" class="mr-3" style="max-width:10rem">
+            <div class="media-body">
+                <h5>title</h5>
+                <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+                <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+                <p>ppppppppppppppppppppppppppppppppppppppppppppppppppppp</p>
+            </div>
+        </li>
+    </ul>
 
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
     </script>
 </body>
 
