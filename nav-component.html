@@ -315,37 +315,10 @@
         </div>
     </nav>
     <h4>ナビゲーションバーの配色</h4>
-    <!-- 
-    <h4>フォーム</h4>
-    <nav class="navbar navbar-dark bg-dark">
-        <a href="" class="navbar-brand">ブランド</a>
-        <form action="" class="form-inline">
-            <input type="search" class="form-control mr-sm-2" placeholder="検索キーワード" aria-label="検索キーワード">
-            <button type="submit" class="btn btn-outline-success my-2 my-sm-0">検索</button>
-        </form>
-    </nav> -->
-
-    <!-- <h3>ナビゲーション</h3>
-    <h4 class="mt-3">ul要素を組み込む</h4>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <span class="navbar-brand">ブランド</span>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a href="" class="nav-link">リンク１<span class="sr-onry">(現位置)</span></a>
-                </li>
-                <li class="nav-item"><a href="" class="nav-link">リンク２</a></li>
-                <li class="nav-item"><a href="" class="nav-link">リンク３</a></li>
-                <li class="nav-item"><a href="" class="nav-link disabled"></a>無効</li>
-            </ul>
-        </div>
-    </nav> -->
-
-
     <h5 class="mt-3">navbar-darkで文字色を明るくしbg-darkで暗い背景色を設定</h5>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <span class="navbar-brand">ブランド</span>
-        <div class="collapse" id="navbarNav" >
+        <div class="collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="" class="nav-link">リンク</a></li>
                 <li class="nav-item"><a href="" class="nav-link">リンク</a></li>
@@ -359,7 +332,7 @@
     </nav>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <span class="navbar-brand">ブランド</span>
-        <div class="collapse" id="navbarNav" >
+        <div class="collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="" class="nav-link">リンク</a></li>
                 <li class="nav-item"><a href="" class="nav-link">リンク</a></li>
@@ -373,7 +346,7 @@
     </nav>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#e3f2fd">
         <span class="navbar-brand">ブランド</span>
-        <div class="collapse" id="navbarNav" >
+        <div class="collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="" class="nav-link">リンク</a></li>
                 <li class="nav-item"><a href="" class="nav-link">リンク</a></li>
@@ -387,7 +360,7 @@
     </nav>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <span class="navbar-brand">ブランド</span>
-        <div class="collapse" id="navbarNav" >
+        <div class="collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="" class="nav-link">リンク</a></li>
                 <li class="nav-item"><a href="" class="nav-link">リンク</a></li>
@@ -399,6 +372,374 @@
             <button type="submit" class="btn btn-outline-warning my-2 my-sm-0">検索</button>
         </form>
     </nav>
+    <h3>ナビゲーションバーの幅の設定</h3>
+    <h4>初期設定</h4>
+    <nav class="navbar nav-expend-lg nav-dark bg-dark">
+        <a href="" class="navbar-brand">ブランド</a>
+    </nav>
+    <h4>containerで囲い水平中央</h4>
+    <div class="container">
+        <nav class="navbar nav-expend-lg nav-dark bg-dark">
+            <a href="" class="navbar-brand">ブランド</a>
+        </nav>
+    </div>
+    <h4>サブコンポーネントを水平中央</h4>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a href="" class="navbar-brand">ブランド</a>
+        </div>
+    </nav>
+    <h3>ナビゲーションバーの配置</h3>
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="" class="navbar-brand">ブランド（通常）</a>
+    </nav>
+
+    <h4>上部固定配置</h4>
+    <nav class="navbar fixed-top navbar-primary bg-danger">
+        <a href="" class="navbar-brand">ブランド</a>
+    </nav>
+
+    <h4>下部固定配置</h4>
+    <!--下部固定配置 作業上に影響あるため削除-->
+    <h4>ページ上部に到達すると固定配置</h4>
+    <nav class="navbar stickey-top navbar-dark bg-dark">
+        <a href="" class="navbar-brand">ブランド</a>
+    </nav>
+    <h3>レスポンシブ対応の設定</h3>
+    <h4>折りたたまないナビゲーション</h4>
+    <nav class="navbar nav-expand navbar-dark bg-dark">
+        <a href="" class="navbar-brand">ブランド</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="" class="nav-link">リンク１<span class="sr-onry">(現位置)</span></a>
+                </li>
+                <li class="nav-item"><a href="" class="nav-link">リンク２</a></li>
+                <li class="nav-item"><a href="" class="nav-link">リンク３</a></li>
+                <li class="nav-item"><a href="" class="nav-link disabled"></a>無効</li>
+            </ul>
+        </div>
+    </nav>
+    <h3>パンくずリスト</h3>
+    <nav aria-label="breadcrumb" role="navigation">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="">ホーム</a></li>
+            <li class="breadcrumb-item"><a href="">ライブラリー</a></li>
+            <li class="breadcrumb-item active" aria-current="page"><a href="">データ</a></li>
+        </ol>
+    </nav>
+    <h3>リストグループ</h3>
+    <h4>基本的な使用例</h4>
+    <ul class="list-group">
+        <li class="list-group-item">リスト項目</li>
+        <li class="list-group-item">リスト項目</li>
+        <li class="list-group-item">リスト項目</li>
+    </ul>
+    <h4>リストグループをアクティブ状態にする</h4>
+    <ul class="list-group">
+        <li class="list-group-item active">リスト項目</li>
+        <li class="list-group-item">リスト項目</li>
+        <li class="list-group-item">リスト項目</li>
+    </ul>
+    <h4>リスト項目を無効化状態にする</h4>
+    <ul class="list-group">
+        <li class="list-group-item disabled">リスト項目</li>
+        <li class="list-group-item">リスト項目</li>
+        <li class="list-group-item">リスト項目</li>
+    </ul>
+    <h4>リンク付きリストグループ</h4>
+    <div class="list-group">
+        <a href="" class="list-group-item list-group-item-action">リスト</a>
+        <a href="" class="list-group-item list-group-item-action">リスト</a>
+        <a href="" class="list-group-item list-group-item-action disabled">リスト</a>
+    </div>
+    <h4>ボタンのリストグループ</h4>
+    <div class="list-group">
+        <button type="button" class="list-group-item list-group-item-action">リスト項目</button>
+        <button type="button" class="list-group-item list-group-item-action">リスト項目</button>
+        <button type="button" class="list-group-item list-group-item-action">リスト項目</button>
+        <button type="button" class="list-group-item list-group-item-action disabled">リスト項目</button>
+    </div>
+    <h4>リストグループの背景色を変更する</h4>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-primary">primary</li>
+        <li class="list-group-item list-group-item-secondary">secondary</li>
+        <li class="list-group-item list-group-item-success">x</li>
+        <li class="list-group-item list-group-item-danger">x</li>
+        <li class="list-group-item list-group-item-warning">x</li>
+        <li class="list-group-item list-group-item-info">x</li>
+        <li class="list-group-item list-group-item-light">x</li>
+        <li class="list-group-item list-group-item-dark">x</li>
+        <li class="list-group-item">デフォルト</li>
+    </ul>
+    <h4>リンク付きリストグループの背景色を変更する</h4>
+    <div class="list-group">
+        <a href="" class="list-group-item list-group-item-action list-group-item-primary">col</a>
+        <a href="" class="list-group-item list-group-item-action list-group-item-secondary">col</a>
+        <a href="" class="list-group-item list-group-item-action list-group-item-success">col</a>
+        <a href="" class="list-group-item list-group-item-action list-group-item-danger">col</a>
+        <a href="" class="list-group-item list-group-item-action list-group-item-warning">col</a>
+        <a href="" class="list-group-item list-group-item-action list-group-item-info">col</a>
+        <a href="" class="list-group-item list-group-item-action list-group-item-light">col</a>
+        <a href="" class="list-group-item list-group-item-action list-group-item-dark">col</a>
+        <a href="" class="list-group-item list-group-item-action">デフォルト</a>
+    </div>
+    <h4>バッヂ付きリストグループ</h4>
+    <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-item-center">リスト<span
+                class="badge badge-primary badge-pill">14</span></li>
+        <li class="list-group-item d-flex justify-content-between align-item-center">リスト<span
+                class="badge badge-danger badge-pill">14</span></li>
+        <li class="list-group-item d-flex justify-content-between align-item-center">リスト<span
+                class="badge badge-info badge-pill">14</span></li>
+    </ul>
+    <h4>カスタムコンテンツのリストグループ</h4>
+    <div class="list-group">
+        <a href="" class="list-group-item list-group-item-action flex-column align-items-start active">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">リスト項目のヘッダー</h5>
+                <small>3日前</small>
+            </div>
+            <p class="mb-1">リスト項目のコンテンツ見本です</p>
+            <small>リスト項目のサブコンテンツです</small>
+        </a>
+        <a href="" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">リスト項目のヘッダー</h5>
+                <small>3日前</small>
+            </div>
+            <p class="mb-1">リスト項目のコンテンツ見本です</p>
+            <small>リスト項目のサブコンテンツです</small>
+        </a>
+        <a href="" class="list-group-item list-group-item-action flex-column align-items-start">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">リスト項目のヘッダー</h5>
+                <small>3日前</small>
+            </div>
+            <p class="mb-1">リスト項目のコンテンツ見本です</p>
+            <small>リスト項目のサブコンテンツです</small>
+        </a>
+    </div>
+    <h4>枠なしのリストグループ</h4>
+    <ul class="list-group item-list-group-flush">
+        <li class="list-group-item">リスト項目</li>
+        <li class="list-group-item">リスト項目</li>
+        <li class="list-group-item">リスト項目</li>
+    </ul>
+    <h3>ページネーション</h3>
+    <h4>基本的な使用例</h4>
+    <nav aria-label="ページネーションの例">
+        <ul class="pagination">
+            <li class="page-item"><a href="" class="page-link">前</a></li>
+            <li class="page-item"><a href="" class="page-link">1</a></li>
+            <li class="page-item"><a href="" class="page-link">2</a></li>
+            <li class="page-item"><a href="" class="page-link">3</a></li>
+            <li class="page-item"><a href="" class="page-link">次</a></li>
+        </ul>
+    </nav>
+    <h4>ページネーションにアイコンを使用する</h4>
+    <nav aria-label="ページネーションの例">
+        <ul class="pagination">
+            <li class="page-item">
+                <a href="" class="page-link" aria-label="前へ">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">前へ</span>
+                </a>
+            </li>
+            <li class="page-item"><a href="" class="page-link">1</a></li>
+            <li class="page-item"><a href="" class="page-link">2</a></li>
+            <li class="page-item"><a href="" class="page-link">3</a></li>
+            <li class="page-item">
+                <a href="" class="page-link" aria-label="次へ">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">次へ</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <h4>リンクに無効状態や現在一である事を示す</h4>
+    <nav aria-label="ページネーションの例">
+        <ul class="pagination">
+            <li class="page-item disabled">
+                <a href="" class="page-link" tabindex="-1">前</a>
+            </li>
+            <li class="page-item"><a href="" class="page-link">1</a></li>
+            <li class="page-item active">
+                <a href="" class="page-link">2<span class="sr-only">現ページ</span></a>
+            </li>
+            <li class="page-item"><a href="" class="page-link">3</a></li>
+            <li class="page-item">
+                <a href="" class="page-link">次</a>
+            </li>
+        </ul>
+    </nav>
+    <h4>ページネーションのサイズを変更する</h4>
+    <h5>pagination-lg</h5>
+    <nav aria-label="ページネーションの例">
+        <ul class="pagination pagination-lg">
+            <li class="page-item"><a href="" class="page-link">前</a></li>
+            <li class="page-item"><a href="" class="page-link">1</a></li>
+            <li class="page-item"><a href="" class="page-link">2</a></li>
+            <li class="page-item"><a href="" class="page-link">3</a></li>
+            <li class="page-item"><a href="" class="page-link">次</a></li>
+        </ul>
+    </nav>
+    <h5>pagination-sm</h5>
+    <nav aria-label="ページネーションの例">
+        <ul class="pagination pagination-sm">
+            <li class="page-item"><a href="" class="page-link">前</a></li>
+            <li class="page-item"><a href="" class="page-link">1</a></li>
+            <li class="page-item"><a href="" class="page-link">2</a></li>
+            <li class="page-item"><a href="" class="page-link">3</a></li>
+            <li class="page-item"><a href="" class="page-link">次</a></li>
+        </ul>
+    </nav>
+    <h4>ページネーションの配置</h4>
+    <h5>中央揃え justify-content-center</h5>
+    <nav aria-label="ページネーションの例">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a href="" class="page-link">前</a></li>
+            <li class="page-item"><a href="" class="page-link">1</a></li>
+            <li class="page-item"><a href="" class="page-link">2</a></li>
+            <li class="page-item"><a href="" class="page-link">3</a></li>
+            <li class="page-item"><a href="" class="page-link">次</a></li>
+        </ul>
+    </nav>
+    <h5>右揃え justify-content-end</h5>
+    <nav aria-label="ページネーションの例">
+        <ul class="pagination justify-content-end">
+            <li class="page-item"><a href="" class="page-link">前</a></li>
+            <li class="page-item"><a href="" class="page-link">1</a></li>
+            <li class="page-item"><a href="" class="page-link">2</a></li>
+            <li class="page-item"><a href="" class="page-link">3</a></li>
+            <li class="page-item"><a href="" class="page-link">次</a></li>
+        </ul>
+    </nav>
+    <h3>フォームボタンのコンポーネント</h3>
+    <h4>基本的な使用例</h4>
+    <form action="">
+        <!--メールアドレス入力-->
+        <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="メールアドレスを入力">
+            <small id="emailHelp" class="form-text text-muted">あなたに関する個人情報を収集することはありません</small>
+        </div>
+        <!--パスワード入力-->
+        <div class="form-group">
+            <label for="password1">パスワード</label>
+            <input type="password" class="form-control" id="password1" placeholder="パスワードを入力">
+        </div>
+        <!--プルダウンメニュー-->
+        <div class="form-group">
+            <label for="serect1">プルダウンメニュー</label>
+            <select name="" id="select1" class="form-control">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+            </select>
+        </div>
+        <!--複数のプルダウンメニュー-->
+        <div class="form-group">
+            <label for="select2">複数のプルダウンメニュー</label>
+            <select multiple class="form-control" id="select2">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+            </select>
+        </div>
+        <!--複数行のテキスト入力欄-->
+        <div class="form-group">
+            <label for="textarea1">複数行のテキスト入力欄</label>
+            <textarea name="" id="" cols="" rows="3" class="form-control"></textarea>
+        </div>
+        <!--ファイル選択-->
+        <div class="formgroup">
+            <label for="file1">ファイルを選択</label>
+            <input type="file" class="form-control-file" id="file1">
+        </div>
+        <!--チェックボックス-->
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check1">
+            <label for="check1" class="form-check-label">チェックする</label>
+        </div>
+        <!--送信ボタン-->
+        <button type="submit" class="btn btn-primary">送信</button>
+    </form>
+    <h4>入力コントロールのサイズを調整する</h4>
+    <div class="form-group">
+        <label for="input">大きいサイズのテキスト入力欄</label>
+        <input type="text" class="form-control form-control-lg" placeholder="form-control-lg">
+    </div>
+    <div class="form-group">
+        <label for="input">標準サイズのテキスト入力欄</label>
+        <input type="text" class="form-control" placeholder="form-control-lg">
+    </div>
+    <div class="form-group">
+        <label for="input">小さいサイズのテキスト入力欄</label>
+        <input type="text" class="form-control form-control-sm" placeholder="form-control-lg">
+    </div>
+    <div class="form-group">
+        <label for="select2">大きいサイズのプルダウンメニュー</label>
+        <select name="" id="" class="form-control form-control-lg">
+            <option value="">lg</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="select2">標準サイズのプルダウンメニュー</label>
+        <select name="" id="" class="form-control">
+            <option value="">Default size</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="select2">小さいサイズのプルダウンメニュー</label>
+        <select name="" id="" class="form-control form-control-sm">
+            <option value="">sm</option>
+        </select>
+    </div>
+    <h4>レンジ入力を作成する</h4>
+    <div class="form-group">
+        <label for="formControlRange">レンジ入力の例</label>
+        <input type="range" class="form-control-range">
+    </div>
+    <h4>読み取り専用のテキストを表示する</h4>
+    <inout class="form-control" type="text" placeholder="読み取り専用のテキスト" readonly=""></inout>
+    <h4>チェックボックスとラジオボタン</h4>
+    <!--チェックボックス-->
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input">
+        <label for="check1" class="form-check-label">チェック１</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" disabled>
+        <label for="check2" class="form-check-label">チェック２（無効）</label>
+    </div>
+    <!--ラジオボタン-->
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="rados" value="option1" checked>
+        <label for="radio1" class="form-check-label">オプション</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="rados" value="optio2">
+        <label for="radio2" class="form-check-label">オプション</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="rados" value="option3" disabled>
+        <label for="radio3" class="form-check-label">オプション</label>
+    </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
