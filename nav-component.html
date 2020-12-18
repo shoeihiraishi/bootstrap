@@ -731,6 +731,114 @@
         <label for="radio3" class="form-check-label">オプション</label>
     </div>
 
+    <h4>選択項目を横並びに変更する</h4>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="option1">
+        <label for="checkbox1" class="form-check-label">1</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" value="option2">
+        <label for="checkbox2" class="form-check-label">2</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="checkbox" value="option3" class="form-check-input">
+        <label for="checkbox3" class="form-check-label">3</label>
+    </div>
+    <h4>ラベル表示のない項目を作成する</h4>
+    <div class="form-check">
+        <input type="checkbox" value="option1" class="form-check-input position-static">
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input position-static" value="option2">
+    </div>
+    <h4>レイアウトを調整する</h4>
+    <form action="">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="姓">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="名">
+            </div>
+        </div>
+    </form>
+
+    <h4>コンパクトなカラム間隔のフォームを作成する</h4>
+    <form action="">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail">メールアドレス</label>
+                <input type="email" class="form-control" placeholder="メールアドレスを入力">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="inoutPassword">パスワード</label>
+                <input type="passWord" class="form-control" placeholder="パスワード">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputState">国</label>
+                <select name="" id="inputState" class="form-control">
+                    <option selected value="">Choose...</option>
+                    <option value="">...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">郵便番号</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputCity">都道府県</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">住所１</label>
+            <input type="text" class="form-control" placeholder="市町村">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">住所２</label>
+            <input type="text" class="form-control" placeholder="マンション名">
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="check1" class="form-check-label">チェックする</label>
+                </div>
+                <button type="submit" class="btn btn-success">サインイン</button>
+            </div>
+        </div>
+    </form>
+    <h4>水平配置フォームを作成する</h4>
+    <form action="">
+        <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">メールアドレス</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" placeholder="メールアドレスを入力">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">パスワード</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" placeholder="パスワードを入力">
+            </div>
+        </div>
+        <div class="row">
+            <legend class="col-form-label col-sm-2 pt-0" name="radios" value="option1" checked>ラジオボタン</legend>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" name="radios" value="option1" checked>
+                    <label for="radios1" class="form-check-label">オプション１</label>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+
+
+
 
 
 
