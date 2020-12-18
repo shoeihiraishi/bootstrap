@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sample</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--new-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+
+<body>
+    <h3>フォームボタンのコンポーネント</h3>
+    <h4>基本的な使用例</h4>
+    <form action="">
+        <!--メールアドレス入力-->
+        <div class="form-group">
+            <label for="email">メールアドレス</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="メールアドレスを入力">
+            <small id="emailHelp" class="form-text text-muted">あなたに関する個人情報を収集することはありません</small>
+        </div>
+        <!--パスワード入力-->
+        <div class="form-group">
+            <label for="password1">パスワード</label>
+            <input type="password" class="form-control" id="password1" placeholder="パスワードを入力">
+        </div>
+        <!--プルダウンメニュー-->
+        <div class="form-group">
+            <label for="serect1">プルダウンメニュー</label>
+            <select name="" id="select1" class="form-control">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+            </select>
+        </div>
+        <!--複数のプルダウンメニュー-->
+        <div class="form-group">
+            <label for="select2">複数のプルダウンメニュー</label>
+            <select multiple class="form-control" id="select2">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+            </select>
+        </div>
+        <!--複数行のテキスト入力欄-->
+        <div class="form-group">
+            <label for="textarea1">複数行のテキスト入力欄</label>
+            <textarea name="" id="" cols="" rows="3" class="form-control"></textarea>
+        </div>
+        <!--ファイル選択-->
+        <div class="formgroup">
+            <label for="file1">ファイルを選択</label>
+            <input type="file" class="form-control-file" id="file1">
+        </div>
+        <!--チェックボックス-->
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check1">
+            <label for="check1" class="form-check-label">チェックする</label>
+        </div>
+        <!--送信ボタン-->
+        <button type="submit" class="btn btn-primary">送信</button>
+    </form>
+    <h4>入力コントロールのサイズを調整する</h4>
+    <div class="form-group">
+        <label for="input">大きいサイズのテキスト入力欄</label>
+        <input type="text" class="form-control form-control-lg" placeholder="form-control-lg">
+    </div>
+    <div class="form-group">
+        <label for="input">標準サイズのテキスト入力欄</label>
+        <input type="text" class="form-control" placeholder="form-control-lg">
+    </div>
+    <div class="form-group">
+        <label for="input">小さいサイズのテキスト入力欄</label>
+        <input type="text" class="form-control form-control-sm" placeholder="form-control-lg">
+    </div>
+    <div class="form-group">
+        <label for="select2">大きいサイズのプルダウンメニュー</label>
+        <select name="" id="" class="form-control form-control-lg">
+            <option value="">lg</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="select2">標準サイズのプルダウンメニュー</label>
+        <select name="" id="" class="form-control">
+            <option value="">Default size</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="select2">小さいサイズのプルダウンメニュー</label>
+        <select name="" id="" class="form-control form-control-sm">
+            <option value="">sm</option>
+        </select>
+    </div>
+    <h4>レンジ入力を作成する</h4>
+    <div class="form-group">
+        <label for="formControlRange">レンジ入力の例</label>
+        <input type="range" class="form-control-range">
+    </div>
+    <h4>読み取り専用のテキストを表示する</h4>
+    <inout class="form-control" type="text" placeholder="読み取り専用のテキスト" readonly=""></inout>
+    <h4>チェックボックスとラジオボタン</h4>
+    <!--チェックボックス-->
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input">
+        <label for="check1" class="form-check-label">チェック１</label>
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" disabled>
+        <label for="check2" class="form-check-label">チェック２（無効）</label>
+    </div>
+    <!--ラジオボタン-->
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="rados" value="option1" checked>
+        <label for="radio1" class="form-check-label">オプション</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="rados" value="optio2">
+        <label for="radio2" class="form-check-label">オプション</label>
+    </div>
+    <div class="form-check">
+        <input type="radio" class="form-check-input" name="rados" value="option3" disabled>
+        <label for="radio3" class="form-check-label">オプション</label>
+    </div>
+    <!--12/18-->
+    <h4>選択項目を横並びに変更する</h4>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" value="option1">
+        <label for="checkbox1" class="form-check-label">1</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" value="option2">
+        <label for="checkbox2" class="form-check-label">2</label>
+    </div>
+    <div class="form-check form-check-inline">
+        <input type="checkbox" value="option3" class="form-check-input">
+        <label for="checkbox3" class="form-check-label">3</label>
+    </div>
+    <h4>ラベル表示のない項目を作成する</h4>
+    <div class="form-check">
+        <input type="checkbox" value="option1" class="form-check-input position-static">
+    </div>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input position-static" value="option2">
+    </div>
+    <h4>レイアウトを調整する</h4>
+    <form action="">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="姓">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="名">
+            </div>
+        </div>
+    </form>
+
+    <h4>コンパクトなカラム間隔のフォームを作成する</h4>
+    <form action="">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputEmail">メールアドレス</label>
+                <input type="email" class="form-control" placeholder="メールアドレスを入力">
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="inoutPassword">パスワード</label>
+                <input type="passWord" class="form-control" placeholder="パスワード">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="inputState">国</label>
+                <select name="" id="inputState" class="form-control">
+                    <option selected value="">Choose...</option>
+                    <option value="">...</option>
+                </select>
+            </div>
+            <div class="form-group col-md-2">
+                <label for="inputZip">郵便番号</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputCity">都道府県</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">住所１</label>
+            <input type="text" class="form-control" placeholder="市町村">
+        </div>
+        <div class="form-group">
+            <label for="inputAddress">住所２</label>
+            <input type="text" class="form-control" placeholder="マンション名">
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="check1" class="form-check-label">チェックする</label>
+                </div>
+                <button type="submit" class="btn btn-success">サインイン</button>
+            </div>
+        </div>
+    </form>
+    <h4>水平配置フォームを作成する</h4>
+    <form action="">
+        <div class="form-group row">
+            <label for="inputEmail" class="col-sm-2 col-form-label">メールアドレス</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control" placeholder="メールアドレスを入力">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">パスワード</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" placeholder="パスワードを入力">
+            </div>
+        </div>
+
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0" name="radios" value="option1" checked>ラジオボタン</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="radios" value="option1" checked>
+                        <label for="radios1" class="form-check-label">オプション１</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="radios" value="option1" checked>
+                        <label for="radios1" class="form-check-label">オプション１</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="radios" value="option1" checked>
+                        <label for="radios1" class="form-check-label">オプション１</label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form-group row">
+            <div class="col-sm-2">チェックボックス</div>
+            <div class="col-sm-10">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input">
+                    <label for="check1" class="form-check-label">チェックする</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group-row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-warning">サインイン</button>
+            </div>
+        </div>
+    </form>
+    <h4>ラベルのサイズを調整する</h4>
+    <label for="labelSm" class="col-sm-3 col-form-label col-form-label-sm">小サイズ:col-form-label-sm</label>
+    <input type="text" class="form-control">
+    <label for="labelDefault" class="col-sm-3 col-form-label">標準サイズ</label>
+    <input type="text" class="form-control">
+    <label for="labelLg" class="col-sm-3 col-form-label col-form-label-lg">大サイズ:col-form-label-lg</label>
+    <input type="text" class="form-control desabled">
+    <h4>自動サイズ調整のカラムを作る</h4>
+    <div class="form-row align-iitem-center">
+        <div class="col-auto">
+            <label for="inputName" class="sr-only">氏名</label>
+            <input type="text" class="form-control mb-2" placeholder="氏名を入力">
+        </div>
+        <div class="col-auto">
+            <label for="inputUsername" class="sr-only">ユーザーネーム</label>
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                </div>
+                <input type="text" class="form-control" placeholder="ユーザーネームを入力">
+            </div>
+        </div>
+        <div class="col-auto">
+            <div class="form-check mb-2">
+                <input type="checkbox" class="form-check-input">
+                <label for="check" class="form-check-label">チェックする</label>
+            </div>
+        </div>
+        <div class="col-auto">
+            <button type="submit" class="btn btn-primary mb-2">送信</button>
+        </div>
+    </div>
+    <h4>ヘルプテキストを表示する</h4>
+    <form action="">
+        <label for="inputPassword">パスワード入力</label>
+        <input type="password" class="form-control" ariadiscribedby="passwordHelpBlock">
+        <small class="form-text text-muted">パスワードは８から２０字で。。。。。</small>
+    </form>
+    <h4>一連のフォームグループをまとめて無効にする</h4>
+    <fieldset disabled>
+        <div class="form-group">
+            <label for="desabledTextInput">無効な入力欄</label>
+            <input type="text" class="form-control" placeholder="Disabled" input="">
+        </div>
+        <div class="form-group">
+            <label for="disabledSelect">無効なプルダウンメニュー</label>
+            <select name="" id="disabledSelect" class="form-control">
+                <option value="">Disable select</option>
+            </select>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" disabled>
+            <label for="disabledCheck" class="form-check-label">無効なチェックボックス</label>
+        </div>
+        <button type="submit" class="btn btn-primary">無効な送信ボタン</button>
+    </fieldset>
+    <h4>bootstrap独自にスタイル設定されたフォームを使用する</h4>
+    <h5>カスタムチェックボックス</h5>
+    <div class="custum-control custom-checkbox">
+        <input type="checkbox" class="coutom-control-input" id="customCheck">
+        <label for="customCheck" class="custom-contol-label">チェックする</label>
+    </div>
+    <h5>カスタムラジオボタン</h5>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="option1" name="option" class="custom-control-input">
+        <label for="option1" class="custom-control-label">オプション１</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" id="option2" name="option" class="custom-control-input">
+        <label for="option2" class="custom-control-label">オプション２</label>
+    </div>
+    <h4>チェックボックスとラジオボタンを無効にする</h4>
+    <div class="custum-control custom-checkbox">
+        <input type="checkbox" class="coutom-control-input" id="customCheckDisabled" disabled>
+        <label for="customCheckDisabled" class="custom-contol-label">チェックする(無効)</label>
+    </div>
+    <div class="custom-control custom-radio">
+        <input type="radio" name="option" class="custom-control-input" disabled>
+        <label for="option1" class="custom-control-label">オプション(無効)</label>
+    </div>
+    <h4>カスタムフォームのプルダウンメニューを作成する</h4>
+    <form action="">
+        <select name="" id="" class="custom-select">
+            <option value="" selected>選択してください</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </form>
+    <div class="container">
+        <form action="">
+            <h4>大きいサイズのプルダウンメニュー</h4>
+            <select name="" id="" class="custom-select custom-select-lg">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </form>
+    </div>
+    <div class="container">
+        <form action="">
+            <h4>標準サイズのプルダウンメニュー</h4>
+            <select name="" id="" class="custom-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </form>
+    </div>
+    <div class="container">
+        <form action="">
+            <h4>小さいサイズのプルダウンメニュー</h4>
+            <select name="" id="" class="custom-select custom-select-sm">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </form>
+    </div>
+    <h4>プルダウンメニューに追加できる属性</h4>
+    <div class="container">
+        <h4>複数選択メニュー</h4>
+        <form action="">
+            <select name="" id="" class="custom-select" multiple>
+                <option value="" selected>選択してください</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </form>
+    </div>
+    <h4>表示する選択肢の数を指定したメニュー</h4>
+    <form action="">
+        <select class="custom-select" size="2">
+            <option value="" selected>選択してください</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+    </form>
+    <h4>カスタムフォームのファイル選択を作成する</h4>
+    <form action="">
+        <!--デフォルトのファイル選択-->
+        <div class="dafault-file mb-5">
+            <input type="file" lang="ja">
+            <label for="dafaultFile">ファイル選択...</label>
+        </div>
+        <!--カスタムフォームのファイル選択-->
+        <div class="custom-file w-50">
+            <input type="file" class="custom-file-input" id="customFile" lang="ja">
+            <label for="customFile" class="custom-file-label">ファイル選択...</label>
+        </div>
+    </form>
+    <style>
+        .custom-file-input:lang(ja)~.custom-file-label::after {
+            content: "参照";
+        }
+    </style>
+    <h4>カスタムレンジ入力を作成する</h4>
+    <div class="form-group mb-5">
+        <label for="formControlRange">レンジ入力の例</label>
+        <input type="range" class="form-controle-range" id="defaultRange">
+    </div>
+    <div class="form-groupe mb-5">
+        <label for="customRange1">カスタムレンジ入力の例</label>
+        <input type="range" class="custom-range" id="customRange">
+    </div>
+    <div class="form-groupe mb-5">
+        <label for="customRange1">カスタムレンジ入力の例(min="0" max="5")</label>
+        <input type="range" class="custom-range" min="0" max="5" id="customRange2">
+    </div>
+    <div class="form-groupe mb-5">
+        <label for="customRange1">カスタムレンジ入力の例(step="0.5")</label>
+        <input type="range" class="custom-range" min="0" max="5" step="0.5" id="customRange3">
+    </div>
+    <h3>入力グループ</h3>
+    <h4>基本的な使用例</h4>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">@</span>
+        </div>
+        <input type="text" class="form-control" placeholder="ユーザー名" aria-label="ユーザー名" aria-describedby="basic-addon1">
+    </div>
+    <div class="inout-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">テキストエリア用</span>
+        </div>
+        <text-aria class="form-control" aria-label="テキストエリア用"></text-aria>
+    </div>
+    <h4>入力コントロール後にアドオンを配置する</h4>
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="ユーザー名" aria-label="ユーザー名" aria-describedby="basic-addon3">
+        <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon3">example.com</span>
+        </div>
+    </div>
+    <h4>入力コントロールの前後にアドオンを配置する</h4>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">&yen;</span>
+        </div>
+        <input type="text" class="form-control" aria-label="金額">
+        <div class="input-group-prepend">
+            <span class="input-group-text">.00</span>
+        </div>
+    </div>
+    <h4>ラベル付きの入力グループ</h4>
+    <label for="basic-url">サイトのURL</label>
+    <div class="input-group">
+        <div class="input-groupe-prepend">
+            <span class="input-group-text" id="basic-addon5">https://example.com/users/</span>
+        </div>
+        <input type="text" class="form-control" id="basic-url" aria-describedy="basic-addon5">
+    </div>
+    <h4>入力グループのサイズ調整</h4>
+    <div class="input-group input-group-sm mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+        </div>
+        <input type="text.form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing">default</span>
+        </div>
+        <input type="text.form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+    </div>
+    <div class="input-group input-group-lg mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+        </div>
+        <input type="text.form-control" aria-label="Large" aria-describedby="inputGroup-sizing-lg">
+    </div>
+    <h4>チェックボックスやラジオボタンのアドオン</h4>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="checkbox" aria-label="次のテキスト入力用のチェックボックス">
+            </div>
+        </div>
+        <input type="text.form-control" aria-label="チェックボックス付きテキスト入力欄">
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="radio" aria-label="次のテキスト入力用のラジオボタン">
+            </div>
+        </div>
+        <input type="text" class="form-control" aria-label="ラジオボタン付きテキスト入力欄">
+    </div>
+    <h4>複数の入力コントロール</h4>
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <span class="input-group-text">姓名</span>
+        </div>
+        <input type="text" class="form-control" placeholder="姓">
+        <input type="text" class="form-control" placeholder="名">
+    </div>
+    <h4>複数のアドオンを組み合わせる</h4>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <div class="input-group-text">
+                <input type="radio" aria-label="次のテキスト入力用のラジオボタン">
+            </div>
+            <span class="input-group-text">&yen;</span>
+            <span class="input-group-text">0.00</span>
+        </div>
+        <input type="text" class="form-control" aria-label="金額">
+    </div>
+    <div class="input-group">
+        <input type="text" class="form-control" aria-label="金額">
+        <div class="input-group-append">
+            <span class="input-group-text">&yen;</span>
+            <span class="input-group-text">0.00</span>
+            <div class="input-group-text">
+                <input type="checkbox" aria-label="前のテキスト入力用のチェックボックス">
+            </div>
+        </div>
+    </div>
+    <h4>ボタン付きアドオン</h4>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="検索キーワード" aria-label="検索キーワード"
+            aria-describedby="basic-addon1">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="button">検索</button>
+        </div>
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <button class="btn-secondary" type="button">好き</button>
+        </div>
+        <input type="text" class="form-control" placeholder="商品名" aria-label="商品名" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+            <button class="btn btn-secondary" type="button">嫌い</button>
+        </div>
+    </div>
+    <h4>ドロップダウン付きアドオン</h4>
+    <div class="input-group">
+        <input type="text" class="form-control" aria-label="ドロップダウン付きテキスト入力欄">
+        <div class="input-group-append">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">アクション</button>
+            <div class="dropdown-menu">
+                <a href="" class="dropdpwn-item">リンク</a>
+                <a href="" class="dropdpwn-item">リンク</a>
+                <a href="" class="dropdpwn-item">リンク</a>
+            </div>
+        </div>
+    </div>
+    <h4>スプリットボタンのアドオン</h4>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+        integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
