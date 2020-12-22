@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>layout</title>
+    <title>utility</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!--new-->
@@ -191,35 +191,345 @@
     </div>
     <h4>主軸方向の整列をするクラス</h4>
     <h5>justifi-content-start</h5>
-    <div class="d-flex justify-content-start">
-        <div>flexitem1</div>
-        <div>flexitem2</div>
-        <div>flexitem3</div>
+    <div class="d-flex justify-content-start bg-success p-2">
+        <div class="bg-warning p-3">flexitem1</div>
+        <div class="bg-warning p-3">flexitem2</div>
+        <div class="bg-warning p-3">flexitem3</div>
     </div>
     <h5>justifi-content-end</h5>
-    <div class="d-flex justify-content-end">
-        <div>flex-item1</div>
-        <div>flex-item2</div>
-        <div>flex-item3</div>
+    <div class="d-flex justify-content-end bg-success p-2">
+        <div class="bg-warning p-3">flex-item1</div>
+        <div class="bg-warning p-3">flex-item2</div>
+        <div class="bg-warning p-3">flex-item3</div>
     </div>
     <h5>justify-content-center</h5>
-    <div class="d-flex justify-content-center">
-        <div>item1</div>
-        <div>item2</div>
-        <div>item3</div>
+    <div class="d-flex justify-content-center bg-success p-2">
+        <div class="bg-warning p-3">item1</div>
+        <div class="bg-warning p-3">item2</div>
+        <div class="bg-warning p-3">item3</div>
     </div>
     <h5>justify-content-between</h5>
-    <div class="d-flex justify-content-between">
-        <div>item1</div>
-        <div>item2</div>
-        <div>item3</div>
+    <div class="d-flex justify-content-between bg-success p-2">
+        <div class="bg-warning p-3">item1</div>
+        <div class="bg-warning p-3">item2</div>
+        <div class="bg-warning p-3">item3</div>
     </div>
     <h5>justify-content-around</h5>
-    <div class="d-flex justify-content-around">
-        <div>item1</div>
-        <div>item2</div>
-        <div>item3</div>
+    <div class="d-flex justify-content-around bg-success p-2">
+        <div class="bg-warning p-3">item1</div>
+        <div class="bg-warning p-3">item2</div>
+        <div class="bg-warning p-3">item3</div>
     </div>
+    <h4>交差軸方向の整列をするクラス</h4>
+    <h5>align-items-stretch</h5>
+    <div class="d-flex align-items-stretch bg-info" style="height:200px;">
+        <div class="bg-warning m-2">item1</div>
+        <div class="bg-warning m-2">item2</div>
+        <div class="bg-warning m-2">item3</div>
+    </div>
+    <h5>align-items-start</h5>
+    <div class="d-flex align-items-start bg-secondary" style="height:200px;">
+        <div class="bg-danger m-2">item1</div>
+        <div class="bg-danger m-2">item2</div>
+        <div class="bg-danger m-2">item3</div>
+    </div>
+    <h5>align-items-end</h5>
+    <div class="d-flex align-items-end bg-success" style="height:200px;">
+        <div class="bg-primary m-2">item1</div>
+        <div class="bg-primary m-2">item2</div>
+        <div class="bg-primary m-2">item3</div>
+    </div>
+    <h5>align-items-center</h5>
+    <div class="d-flex align-items-center bg-dark" style="height:200px;">
+        <div class="bg-info m-2">items1</div>
+        <div class="bg-info m-2">items2</div>
+        <div class="bg-info m-2">items3</div>
+    </div>
+    <h5>align-items-baseline</h5>
+    <div class="d-flex align-items-baseline bg-danger" style="height:200px">
+        <div style="padding:2rem" class="bg-light m-2">item1<br>padding:2rem</div>
+        <div style="padding:4rem;" class="bg-light m-2">item2<br>padding:4rem</div>
+        <div style="padding:1rem;" class="bg-light m-2">item3<br>padding:1rem</div>
+    </div>
+    <h4>flexアイテムを交差軸上で個別に配置するクラス</h4>
+    <h5>align-self-stretch</h5>
+    <div class="d-flex bg-success" style="height:200px;">
+        <div class="bg-warning m-2">item</div>
+        <div class="align-self-stretch bg-warning m-2">item(slign-self-stretch)</div>
+        <div class="bg-warning m-2">item</div>
+    </div>
+    <h5>align-self-start</h5>
+    <div class="d-flex bg-danger" style="height:200px">
+        <div class="m-2 bg-info">item</div>
+        <div class="m-2 bg-info align-self-start">item(align-self-start)</div>
+        <div class="m-2 bg-info">item</div>
+    </div>
+    <h5>align-self-end</h5>
+    <div class="d-flex bg-secondary" style="height:200px;">
+        <div class="m-2 bg-light">item</div>
+        <div class="m-2 bg-light">item</div>
+        <div class="m-2 bg-light align-self-end">item(align-items-end)</div>
+    </div>
+    <h5>align-self-center</h5>
+    <div class="bg-success d-flex" style="height:200px">
+        <div class="m-2 bg-info">item</div>
+        <div class="m-2 bg-info">item</div>
+        <div class="m-2 bg-info align-self-center">item(align-self-center)</div>
+    </div>
+    <h5>align-self-baseline</h5>
+    <div class="d-flex bg-info" style="height:200px;">
+        <div class="bg-warning m-2">item</div>
+        <div class="bg-warning m-2">item</div>
+        <div class="align-self-baseline bg-warning m-2">align-self-baseline</div>
+    </div>
+    <h4>flexコンテナ全幅に渡って等幅で整列するクラス</h4>
+    <div class="d-flex bg-dark" style="height:200px;">
+        <div class="flex-fill bg-light m-2">item1</div>
+        <div class="flex-fill bg-light m-2">item2</div>
+        <div class="flex-fill bg-light m-2">item3</div>
+    </div>
+    <h4>flexアイテムの幅の伸縮を指定するクラス</h4>
+    <h5>デフォルト</h5>
+    <div class="d-flex bg-warning" style="height:100px;">
+        <div class="p-2 border-danger border">item1</div>
+        <div class="p-2 border-danger border">item2</div>
+        <div class="p-2 border-danger border">item3</div>
+    </div>
+    <h5>flex-grow</h5>
+    <div class="d-flex bg-info" style="height:100px;">
+        <div class="p-2 border border-danger flex-grow-1">item(flex-grow-1)</div>
+        <div class="p-2 border border-danger">item</div>
+        <div class="p-2 border border-danger">item</div>
+    </div>
+    <h5>flex-shrink</h5>
+    <div class="d-flex bg-success" style="height:100px;">
+        <div class="p-2 border border-danger flex-shrink-1">item(flex-shrink-1)</div>
+        <div class="p-2 border border-danger w-100">item</div>
+        <div class="p-2 border border-danger w-100">item</div>
+    </div>
+    <h4>flexアイテムの折り返しを設定するクラス</h4>
+    <h5>flex-nowrap</h5>
+    <div class="d-flex flex-nowrap bg-warning p-3">
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item1</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item2</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item3</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item4</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item5</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item6</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item7</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item8</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item9</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item10</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item11</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item12</div>
+    </div>
+    <h5>flex-wrap</h5>
+    <div class="d-flex flex-wrap bg-warning p-3">
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item1</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item2</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item3</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item4</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item5</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item6</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item7</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item8</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item9</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item10</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item11</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item12</div>
+    </div>
+    <h5>wrap-reverse</h5>
+    <div class="d-flex flex-wrap-reverse bg-warning p-3">
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item1</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item2</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item3</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item4</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item5</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item6</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item7</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item8</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item9</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item10</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item11</div>
+        <div class="bg-secondary p-2 m-2" style="width:400px;">item12</div>
+    </div>
+    <h4>特定のflexアイテムの表示順序を入れ替えるクラス</h4>
+    <div class="d-flex bg-danger p-3">
+        <div class="order-1 bg-info p-3 m-2">item1</div>
+        <div class="order-3 bg-info p-3 m-2">item2</div>
+        <div class="order-2 bg-info p-3 m-2">item3</div>
+    </div>
+    <h4>自動マージンでflexアイテムを分離する</h4>
+    <h5>デフォルト</h5>
+    <div class="d-flex bg-secondary p-3">
+        <div class="bg-success p-2 m-2">item1</div>
+        <div class="bg-success p-2 m-2">item2</div>
+        <div class="bg-success p-2 m-2">item3</div>
+    </div>
+    <h5>右に分離</h5>
+    <div class="d-flex bg-secondary p-3">
+        <div class=" mr-auto bg-success p-2">item1</div>
+        <div class="bg-success p-2 m-2">item2</div>
+        <div class="bg-success p-2 m-2">item3</div>
+    </div>
+    <h5>左に分離</h5>
+    <div class="d-flex bg-secondary p-3">
+        <div class="bg-success p-2 m-2">item1</div>
+        <div class="bg-success p-2 m-2">item2</div>
+        <div class="ml-auto bg-success p-2">item3</div>
+    </div>
+    <h4>複数行におけるflexアイテムの交差軸の整列をするクラス</h4>
+    <h5>align-content-start</h5>
+    <div class="d-flex align-content-start flex-wrap bg-info" style="height:200px">
+        <div class="p-2 bg-warning" style="width:100px;">item1</div>
+        <div class="p-2 bg-warning" style="width:100px;">item2</div>
+        <div class="p-2 bg-warning" style="width:100px;">item3</div>
+        <div class="p-2 bg-warning" style="width:100px;">item4</div>
+        <div class="p-2 bg-warning" style="width:100px;">item5</div>
+        <div class="p-2 bg-warning" style="width:100px;">item6</div>
+        <div class="p-2 bg-warning" style="width:100px;">item7</div>
+        <div class="p-2 bg-warning" style="width:100px;">item8</div>
+        <div class="p-2 bg-warning" style="width:100px;">item9</div>
+        <div class="p-2 bg-warning" style="width:100px;">item10</div>
+        <div class="p-2 bg-warning" style="width:100px;">item11</div>
+        <div class="p-2 bg-warning" style="width:100px;">item12</div>
+        <div class="p-2 bg-warning" style="width:100px;">item13</div>
+        <div class="p-2 bg-warning" style="width:100px;">item14</div>
+        <div class="p-2 bg-warning" style="width:100px;">item15</div>
+    </div>
+    <h5>align-content-end</h5>
+    <div class="d-flex align-content-end flex-wrap bg-info" style="height:200px">
+        <div class="p-2 bg-warning" style="width:100px;">item1</div>
+        <div class="p-2 bg-warning" style="width:100px;">item2</div>
+        <div class="p-2 bg-warning" style="width:100px;">item3</div>
+        <div class="p-2 bg-warning" style="width:100px;">item4</div>
+        <div class="p-2 bg-warning" style="width:100px;">item5</div>
+        <div class="p-2 bg-warning" style="width:100px;">item6</div>
+        <div class="p-2 bg-warning" style="width:100px;">item7</div>
+        <div class="p-2 bg-warning" style="width:100px;">item8</div>
+        <div class="p-2 bg-warning" style="width:100px;">item9</div>
+        <div class="p-2 bg-warning" style="width:100px;">item10</div>
+        <div class="p-2 bg-warning" style="width:100px;">item11</div>
+        <div class="p-2 bg-warning" style="width:100px;">item12</div>
+        <div class="p-2 bg-warning" style="width:100px;">item13</div>
+        <div class="p-2 bg-warning" style="width:100px;">item14</div>
+        <div class="p-2 bg-warning" style="width:100px;">item15</div>
+    </div>
+    <h5>align-content-center</h5>
+    <div class="d-flex align-content-center flex-wrap bg-info" style="height:200px">
+        <div class="p-2 bg-warning" style="width:100px;">item1</div>
+        <div class="p-2 bg-warning" style="width:100px;">item2</div>
+        <div class="p-2 bg-warning" style="width:100px;">item3</div>
+        <div class="p-2 bg-warning" style="width:100px;">item4</div>
+        <div class="p-2 bg-warning" style="width:100px;">item5</div>
+        <div class="p-2 bg-warning" style="width:100px;">item6</div>
+        <div class="p-2 bg-warning" style="width:100px;">item7</div>
+        <div class="p-2 bg-warning" style="width:100px;">item8</div>
+        <div class="p-2 bg-warning" style="width:100px;">item9</div>
+        <div class="p-2 bg-warning" style="width:100px;">item10</div>
+        <div class="p-2 bg-warning" style="width:100px;">item11</div>
+        <div class="p-2 bg-warning" style="width:100px;">item12</div>
+        <div class="p-2 bg-warning" style="width:100px;">item13</div>
+        <div class="p-2 bg-warning" style="width:100px;">item14</div>
+        <div class="p-2 bg-warning" style="width:100px;">item15</div>
+    </div>
+    <h5>align-content-between</h5>
+    <div class="d-flex align-content-between flex-wrap bg-info" style="height:200px">
+        <div class="p-2 bg-warning" style="width:100px;">item1</div>
+        <div class="p-2 bg-warning" style="width:100px;">item2</div>
+        <div class="p-2 bg-warning" style="width:100px;">item3</div>
+        <div class="p-2 bg-warning" style="width:100px;">item4</div>
+        <div class="p-2 bg-warning" style="width:100px;">item5</div>
+        <div class="p-2 bg-warning" style="width:100px;">item6</div>
+        <div class="p-2 bg-warning" style="width:100px;">item7</div>
+        <div class="p-2 bg-warning" style="width:100px;">item8</div>
+        <div class="p-2 bg-warning" style="width:100px;">item9</div>
+        <div class="p-2 bg-warning" style="width:100px;">item10</div>
+        <div class="p-2 bg-warning" style="width:100px;">item11</div>
+        <div class="p-2 bg-warning" style="width:100px;">item12</div>
+        <div class="p-2 bg-warning" style="width:100px;">item13</div>
+        <div class="p-2 bg-warning" style="width:100px;">item14</div>
+        <div class="p-2 bg-warning" style="width:100px;">item15</div>
+    </div>
+    <h5>align-content-around</h5>
+    <div class="d-flex align-content-around flex-wrap bg-info" style="height:200px">
+        <div class="p-2 bg-warning" style="width:100px;">item1</div>
+        <div class="p-2 bg-warning" style="width:100px;">item2</div>
+        <div class="p-2 bg-warning" style="width:100px;">item3</div>
+        <div class="p-2 bg-warning" style="width:100px;">item4</div>
+        <div class="p-2 bg-warning" style="width:100px;">item5</div>
+        <div class="p-2 bg-warning" style="width:100px;">item6</div>
+        <div class="p-2 bg-warning" style="width:100px;">item7</div>
+        <div class="p-2 bg-warning" style="width:100px;">item8</div>
+        <div class="p-2 bg-warning" style="width:100px;">item9</div>
+        <div class="p-2 bg-warning" style="width:100px;">item10</div>
+        <div class="p-2 bg-warning" style="width:100px;">item11</div>
+        <div class="p-2 bg-warning" style="width:100px;">item12</div>
+        <div class="p-2 bg-warning" style="width:100px;">item13</div>
+        <div class="p-2 bg-warning" style="width:100px;">item14</div>
+        <div class="p-2 bg-warning" style="width:100px;">item15</div>
+    </div>
+    <h5>align-content-stretch</h5>
+    <div class="d-flex align-content-stretch flex-wrap bg-info" style="height:200px">
+        <div class="p-2 bg-warning" style="width:100px;">item1</div>
+        <div class="p-2 bg-warning" style="width:100px;">item2</div>
+        <div class="p-2 bg-warning" style="width:100px;">item3</div>
+        <div class="p-2 bg-warning" style="width:100px;">item4</div>
+        <div class="p-2 bg-warning" style="width:100px;">item5</div>
+        <div class="p-2 bg-warning" style="width:100px;">item6</div>
+        <div class="p-2 bg-warning" style="width:100px;">item7</div>
+        <div class="p-2 bg-warning" style="width:100px;">item8</div>
+        <div class="p-2 bg-warning" style="width:100px;">item9</div>
+        <div class="p-2 bg-warning" style="width:100px;">item10</div>
+        <div class="p-2 bg-warning" style="width:100px;">item11</div>
+        <div class="p-2 bg-warning" style="width:100px;">item12</div>
+        <div class="p-2 bg-warning" style="width:100px;">item13</div>
+        <div class="p-2 bg-warning" style="width:100px;">item14</div>
+        <div class="p-2 bg-warning" style="width:100px;">item15</div>
+    </div>
+    <h3>floatユーティリティ</h3>
+    <h4>フロートを設定するクラス</h4>
+    <div class="container bg-danger" style="height:100px;">
+        <span class="float-left p-2 bg-success">float-left</span><br>
+        <span class="float-right p-2 bg-success">float-right</span><br>
+        <span class="float-none p-2 bg-success">float-none</span>
+    </div>
+    <h4>ブレイクポイントでフロートを切り替えるクラス</h4>
+    <div class="container bg-secondary" style="height:50px;">
+        <span class="float-sm-right p-2 bg-info">SM以上で右寄せ</span>
+    </div>
+    <div class="container bg-warning" style="height:50px;">
+        <span class="float-md-right p-2 bg-info">MD以上で右寄せ</span>
+    </div>
+    <div class="container bg-secondary" style="height:50px;">
+        <span class="float-lg-right p-2 bg-info">LG以上で右寄せ</span>
+    </div>
+    <div class="container bg-warning" style="height:50px;">
+        <span class="float-xl-right p-2 bg-info">XL以上で右寄せ</span>
+    </div>
+    <h4>clearfixユーティリティ</h4>
+    <div class="w-50 mx-auto bg-danger clearfix">
+        <div class="float-right bg-success">右フロート</div>
+    </div>
+    <h4>crearfixが不要のケース</h4>
+    <div class="container bg-info">
+        <div class="float-left bg-warning">左フロート</div>
+        <div class="float-right bg-warning">右フロート</div>
+        <div style="clear:both;">clearboth</div>
+    </div>
+    <h4>clearfixが必要になるケース</h4>
+    <div class="container clearfix bg-secondary">
+        <div class="float-left bg-success">左フロート</div>
+        <div class="float-right bg-success">右フロート</div>
+    </div>
+    <h3>positionユーティリティー</h3>
+    <h4>要素の位置指定をするクラス</h4>
+    
+
+
+
+
+
 
 
 
