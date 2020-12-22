@@ -89,6 +89,139 @@
     <span class="rounded-right p-2 bg-dark text-white">rounded</span>
     <span class="rounded-circle p-2 bg-dark text-white">rounded</span>
     <span class="rounded-0 p-2 bg-dark text-white">rounded</span>
+    <h3>Displayユーティリティー</h3>
+    <h4>表示形式を設定するクラス</h4>
+    <div class="container text-center">
+        <div class="bg-primary text-white">ブロック表示のdiv</div>
+        <div class="bg-dark text-white">ブロック表示のdiv</div>
+    </div>
+    <div class="container text-center">
+        <div class="d-inline bg-primary text-white">インライン表示のdiv</div>
+        <div class="d-inline bg-dark text-white">インライン表示のdiv</div>
+    </div>
+    <div class="container text-center">
+        <span class="bg-primary text-white">インライン表示のspan</span>
+        <span class="bg-dark text-white">インライン表示のspan</span>
+    </div>
+    <div class="container text-center">
+        <span class="d-block bg-primary text-white">ブロック表示のspan</span>
+        <span class="d-block bg-dark text-white">ブロック表示のspan</span>
+    </div>
+    <h4>要素の表示非表示を設定するレスポンシブなクラス</h4>
+    <div class="d-lg-none bg-primary text-white">lgより大きい画面幅で非表示</div>
+    <div class="d-none d-lg-block bg-secondary text-white">lgより大きい画面幅で表示</div>
+    <h4>印刷字の表示・非表示を設定するクラス</h4>
+    <div class="d-print-none">スクリーンのみ表示（印刷字のみ非表示）</div>
+    <div class="d-none d-print-block">印刷字のみ表示（スクリーンでは非表示）</div>
+    <h3>Sizingユーティリティ</h3>
+    <h4>幅を設定するクラス</h4>
+    <div class="container">
+        <div class="w-25 bg-warning">25%</div>
+        <div class="w-50 bg-info">50%</div>
+        <div class="w-75 bg-warning">75%</div>
+        <div class="w-100 bg-info">100%</div>
+        <div class="w-auto bg-warning">auto</div>
+    </div>
+    <h4>高さを設定するクラス</h4>
+    <div class="container" style="height:200px;">
+        <div class="h-25 d-inline-block bg-success">25%</div>
+        <div class="h-50 d-inline-block bg-info">50%</div>
+        <div class="h-75 d-inline-block bg-success">75%</div>
+        <div class="h-100 d-inline-block bg-info">100%</div>
+        <div class="h-auto d-inline-block bg-success">auto</div>
+    </div>
+    <h4>最大幅100%を設定するクラス</h4>
+    <div class="container">
+        <img src="img/sample.jpg" alt="" class="mw-100">
+    </div>
+    <h4>最大高100%を設定するクラス</h4>
+    <div class="container" style="height:100px">
+        <img src="img/sample.jpg" alt="" class="mh-100">
+    </div>
+    <h3>Spacingユーティリティ</h3>
+    <h4>マージンの応用</h4>
+    <div class="container text-center">
+        <div class="mx-auto bg-secondary" style="height:50px;">mx-auto</div>
+    </div>
+    <h3>Flexユーティリティ</h3>
+    <h4>flexboxを有効にするクラス</h4>
+    <div class="d-flex bg-primary">d-flex</div>
+    <div class="d-inline-flex bg-success">d-inline-flex</div>
+    <div class="container">
+        <div class="d-flex bg-secondary p-2">
+            <div class="p-5 m-2 bg-danger">item</div>
+            <div class="p-5 m-2 bg-danger">item</div>
+            <div class="p-5 m-2 bg-danger">item</div>
+            <div class="d-inline-flex">
+                <p class="p-2 m-2 bg-info">item</p>
+                <p class="p-2 m-2 bg-info">item</p>
+                <p class="p-2 m-2 bg-info">item</p>
+            </div>
+        </div>
+        <div class="d-inline-flex">
+            <p class="p-2 m-2 bg-info">item</p>
+            <p class="p-2 m-2 bg-info">item</p>
+            <p class="p-2 m-2 bg-info">item</p>
+        </div>
+    </div>
+    <h4>flexコンテナの主軸方向を設定するクラス</h4>
+    <h5>左から右(flex-row)</h5>
+    <div class="d-flex flex-row bg-dark text-white">
+        <div>flex-item1</div>
+        <div>flex-item2</div>
+        <div>flex-item3</div>
+    </div>
+    <h5>右から左(flex-row-reverse)</h5>
+    <div class="d-flex flex-row-reverse bg-success">
+        <div>flex-item1</div>
+        <div>flex-item2</div>
+        <div>flex-item3</div>
+    </div>
+    <h5>上から下(flex=column)</h5>
+    <div class="d-flex flex-column bg-warning">
+        <div>flex-item1</div>
+        <div>flex-item2</div>
+        <div>flex-item3</div>
+    </div>
+    <h5>下から上(flex-column-reverse)</h5>
+    <div class="d-flex flex-column-reverse bg-info">
+        <div>flex-item1</div>
+        <div>flex-item2</div>
+        <div>flex-item3</div>
+    </div>
+    <h4>主軸方向の整列をするクラス</h4>
+    <h5>justifi-content-start</h5>
+    <div class="d-flex justify-content-start">
+        <div>flexitem1</div>
+        <div>flexitem2</div>
+        <div>flexitem3</div>
+    </div>
+    <h5>justifi-content-end</h5>
+    <div class="d-flex justify-content-end">
+        <div>flex-item1</div>
+        <div>flex-item2</div>
+        <div>flex-item3</div>
+    </div>
+    <h5>justify-content-center</h5>
+    <div class="d-flex justify-content-center">
+        <div>item1</div>
+        <div>item2</div>
+        <div>item3</div>
+    </div>
+    <h5>justify-content-between</h5>
+    <div class="d-flex justify-content-between">
+        <div>item1</div>
+        <div>item2</div>
+        <div>item3</div>
+    </div>
+    <h5>justify-content-around</h5>
+    <div class="d-flex justify-content-around">
+        <div>item1</div>
+        <div>item2</div>
+        <div>item3</div>
+    </div>
+
+
 
 
 
