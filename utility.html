@@ -523,20 +523,121 @@
         <div class="float-right bg-success">右フロート</div>
     </div>
     <h3>positionユーティリティー</h3>
-    <h4>要素の位置指定をするクラス</h4>
-    
-
-
-
-
-
-
-
-
-
-
-
-
+    <h4>最上部に固定するクラス</h4>
+    <h2 class="my-5 text-center">Positionユーティリティ</h2>
+    <h3 class="my-5 text-center">最上部に固定するクラス(fixed-top)</h3>
+    <div class="container">
+        <div class="fixed-top py-3 px-3 bg-dark text-center" id=""><a href="#test" class="text-light">#testへ</a></div>
+        <h3 id="">#test</h3>
+        <div class="box">このボックスには高さ1000pxが設定されています。</div>
+    </div>
+    <h4>最下部に固定するクラス</h4>
+    <div class="fixd-bottom py-3 px-3 bg-dark text-center" id=""><a href="#test" class="text-light">#testへ</a></div>
+    <h4 id="">#test</h4>
+    <div class="box">このボックスには高さ1000pxが設定されています</div>
+    <p class="pagetop text-right"><a href="#top">ページトップへ</a></p>
+    <h4>最上部に達すると固定するクラス</h4>
+    <div class="sticky-top py-3 px-3 bg-dark text-center" id="nav"><a href="" class="text-light">#testへ</a></div>
+    <h3>Textユーティリティ</h3>
+    <h4>文字の均等割付けを設定するクラス</h4>
+    <h5>text-justify</h5>
+    <p class="text-justify bg-warning p-3">
+        あいうえおabcdefg1234567あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456
+    </p>
+    <h5>通常</h5>
+    <p class="bg-warning p-3">
+        あいうえおabsdefg1234567あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456あいうえおabcdefg123456
+    </p>
+    <h5>文字の左寄せ、右寄せ、中央揃えを設定するクラス</h5>
+    <div class="container bg-secondary p-3">
+        <p class="text-left bg-success p-3">text-left</p>
+        <p class="text-center bg-success p-3">text-center</p>
+        <p class="text-right bg-success p-3">text-right</p>
+    </div>
+    <h5>文字を折り返さないように設定するクラス(text-nowrap)</h5>
+    <div class="container bg-danger p-3">
+        <table class="w-50 mx-auto">
+            <tr>
+                <th class="text-nowrap bg-light p-1">折り返したくない折り返したくない折り返したくない</th>
+                <td class="bg-light p-1">折り返しても良い折り返しても良い折り返しても良い</td>
+            </tr>
+        </table>
+    </div>
+    <h5>長いテキストを省略記号で表すクラス</h5>
+    <div class="conatainer bg-success p-3">
+        <p class="text-truncate w-25 bg-light p-2">ダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
+    </div>
+    <h5>文字を大文字や小文字に変換するクラス</h5>
+    <div class="conainer bg-warning p-3">
+        <p class="text-lowercase">text-lowercase</p>
+        <p class="text-uppercase">text-uppercase</p>
+        <p class="text-capitalize">text-capitalize</p>
+    </div>
+    <h4>文字の太さとイタリック体を設定するクラス</h4>
+    <div class="container bg-success p-3">
+        <p class="font-weight-bold">太字(font-weight-bold)</p>
+        <p class="font-weight-nomal">通常(font-weight-nomal)</p>
+        <p class="font-weight-light">細字(font-weight-light)</p>
+        <p class="font-italic">イタリック体(font-italic)</p>
+    </div>
+    <h5>等幅フォントを指定するクラス</h5>
+    <div class="container mb-5 bg-primary">
+        <h3 class="text-monospace">等幅フォント</h3>
+        <p class="text-monospace">This is in monospace<br>日本語の場合</p>
+    </div>
+    <div class="container bg-primary">
+        <h3>通常のフォント（参考）</h3>
+        <p>This is in monospace<br>日本語の場合</p>
+    </div>
+    <h3>Vartical align ユーティリティ</h3>
+    <h4>インライン要素の垂直方向の整列</h4>
+    <div class="box bg-warning p-3">
+        <span class="align-baseline border border-danger p-1">align-baseline</span>
+        <span class="align-top border border-danger p-1">align-top</span>
+        <span class="align-middle border border-danger p-1">align-middle</span>
+        <span class="align-bottom border border-danger p-1">align-bottom</span>
+        <span class="align-text-top border border-danger p-1">align-text-top</span>
+        <span class="align-text-bottom border border-danger p-1">align-text-bottom</span>
+    </div>
+    <h4>テーブルセルの垂直方向の整列</h4>
+    <table style="height:100px;" class="mx-auto bg-secondary">
+        <tbody>
+            <tr>
+                <td class="align-baseline border border-dark p-2 m-2">baseline</td>
+                <td class="align-top border border-dark p-2 m-2">align-top</td>
+                <td class="aligmiddle border border-dark p-2 m-2">align-middle</td>
+                <td class="align-bottom border border-dark p-2 m-2">align-bottom</td>
+                <td class="align-text-top border border-dark p-2 m-2">align-text-top</td>
+                <td class="slign-text-bottom border border-dark p-2 m-2">align-text-bottom</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>その他ユーティリクラス</h3>
+    <h4>スクリーンリーダー用ユーティリティ</h4>
+    <a href="#content" class="sr-onry sr-only-focusable">メインコンテンツへスキップ</a>
+    <h4>Visibilityユーティリティ</h4>
+    <ol>
+        <li>リストその1</li>
+        <li class="invisible">リストその2</li>
+        <li>リストその3</li>
+        <li class="d-none">リストその4</li>
+        <li>リストその5</li>
+    </ol>
+    <h4>クローズアイコンユーティリティ</h4>
+    <button type="button" class="close" aria-label="閉じる">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <h4>Shadowsユーティリティ</h4>
+    <div class="shadow-none p-3 mb-5 bg-light rounded">影なし(shadow-none)</div>
+    <div class="shadow-sm p-3 mb-5 bg-light rounded">小さめの影(shadow-sm)</div>
+    <div class="shadow p-3 mb-5 bg-light rounded">標準の影(shadow)</div>
+    <div class="shadow-lg p-3 mb-5 bg-light rounded">大きめの影(shadow-lg)</div>
+    <style>
+        h4,
+        h5 {
+            margin-top: 2rem;
+        }
+    </style>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
