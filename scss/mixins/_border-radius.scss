@@ -61,3 +61,28 @@
     border-bottom-left-radius: $radius;
   }
 }
+//左上の角丸
+@mixin border-tl-radius($radius){
+  @if $enable-rounded {
+    border-top-left-radius: $radius;
+  }
+}
+//右上の角丸
+@mixin border-tr-radius($radius){
+  @if $enable-rounded {
+    border-top-right-radius: $radius;
+  }
+}
+//左下の角丸
+@mixin border-bl-radius($radius){
+  @if $enable-rounded {
+    border-bottom-left-radius: $radius;
+  }
+}
+//右上の角丸
+@mixin border-tl-radius($radius){
+  @if $enable-rounded {
+    border-bottom-right-radius: $radius;
+  }
+}
+
