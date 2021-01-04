@@ -306,66 +306,174 @@
     </div>
     <!--小さなサイズのモーダル-->
     <h5 class="mt-5">小さなサイズのモーダル</h5>
-        <!--切り替えボタン-->
-        <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#smallModal">切り替えボタン sm</button>
-        <!--モーダル-->
-        <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labeledby="smallModallabel"
-            aria-hidden="true">
-            <!--モーダルのダイアログ本体-->
-            <div class="modal-dialog modal-sm" role="document">
-                <!--モーダルのコンテンツ部分-->
-                <div class="modal-content">
-                    <!--モーダルのヘッダー-->
-                    <div class="modal-header">
-                        <!--モーダルのタイトル-->
-                        <div class="modal-title" id="">モーダルのタイトル</div>
-                        <!--閉じるアイコン-->
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times</span>
-                        </button>
-                    </div>
-                    <!--モーダルの本文-->
-                    <div class="modal-body">
-                        <div class="container-fluid bg-warning">
-                            <!--1行目-->
-                            <div class="row">
-                                <div class="col-md-4 bg-success">col-md-4</div>
-                                <div class="col-md-4 ml-auto bg-success">col-md-4 ml-auto</div>
-                            </div>
-                            <!--2行目-->
-                            <div class="row">
-                                <div class="col-md-3 ml-auto bg-success">col-md-3 ml-auto</div>
-                                <div class="col-md-2 ml-auto bg-success">col-md-2 ml-auto</div>
-                            </div>
-                            <!--3行目-->
-                            <div class="row">
-                                <div class="col-sm-9 bg-success">Level 1:col-sm-9
-                                    <div class="row">
-                                        <div class="col-8 col-sm-6 bg-success">Level 2:col-8 col-sm-6</div>
-                                        <div class="col-4 col-sm-6 bg-success">Level 2:col-4 col-sm-6</div>
-                                    </div>
+    <!--切り替えボタン-->
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#smallModal">切り替えボタン sm</button>
+    <!--モーダル-->
+    <div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labeledby="smallModallabel"
+        aria-hidden="true">
+        <!--モーダルのダイアログ本体-->
+        <div class="modal-dialog modal-sm" role="document">
+            <!--モーダルのコンテンツ部分-->
+            <div class="modal-content">
+                <!--モーダルのヘッダー-->
+                <div class="modal-header">
+                    <!--モーダルのタイトル-->
+                    <div class="modal-title" id="">モーダルのタイトル</div>
+                    <!--閉じるアイコン-->
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times</span>
+                    </button>
+                </div>
+                <!--モーダルの本文-->
+                <div class="modal-body">
+                    <div class="container-fluid bg-warning">
+                        <!--1行目-->
+                        <div class="row">
+                            <div class="col-md-4 bg-success">col-md-4</div>
+                            <div class="col-md-4 ml-auto bg-success">col-md-4 ml-auto</div>
+                        </div>
+                        <!--2行目-->
+                        <div class="row">
+                            <div class="col-md-3 ml-auto bg-success">col-md-3 ml-auto</div>
+                            <div class="col-md-2 ml-auto bg-success">col-md-2 ml-auto</div>
+                        </div>
+                        <!--3行目-->
+                        <div class="row">
+                            <div class="col-sm-9 bg-success">Level 1:col-sm-9
+                                <div class="row">
+                                    <div class="col-8 col-sm-6 bg-success">Level 2:col-8 col-sm-6</div>
+                                    <div class="col-4 col-sm-6 bg-success">Level 2:col-4 col-sm-6</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--モーダルのフッター-->
-                    <div class="modal-footer">
-                        <!--閉じるボタン-->
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
-                    </div>
+                </div>
+                <!--モーダルのフッター-->
+                <div class="modal-footer">
+                    <!--閉じるボタン-->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
                 </div>
             </div>
         </div>
-<h3>スクロールスパイ</h3>
-<!--ナビゲーション-->
+    </div>
+    <h3>スクロールスパイ</h3>
+    <!--ナビゲーション-->
+    <nav id="navbar" class="navbar navbar-dark bg-dark fixed-top">
+        <a href="#" class="navbar-brand">ナビゲーションバー</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a href="#contents01" class="nav-link">コンテンツ０１</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contents02" class="nav-link">コンテンツ０２</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                    aria-expanded="false">コンテンツ０３</a>
+                <div class="dropdown-menu">
+                    <a href="#contents03-01" class="dropdown-item">01</a>
+                    <a href="#contents03-02" class="dropdown-item">02</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a href="#contents03-03" class="dropdown-item">03</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!--コンテンツ-->
+    <div class="mb-5">
+        <h4 id="contents01" style="padding-top:60px;margin-top:-60px">コンテンツ1</h4>
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+    </div>
+    <div class="mb-5">
+        <h4 id="contents02" style="padding-top:60px;margin-top:-60px">コンテンツ2</h4>
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+    </div>
+    <div class="mb-5">
+        <h4 id="contents03-01" style="padding-top:60px;margin-top:-60px">コンテンツ3-1</h4>
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+    </div>
+    <div class="mb-5">
+        <h4 id="contents03-02" style="padding-top:60px;margin-top:-60px">コンテンツ3-2</h4>
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+    </div>
+    <div class="mb-5">
+        <h4 id="contents03-03" style="padding-top:60px; margin-top:-60px;">コンテンツ3-3</h4>
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+        ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+    </div>
+    <h4>body要素以外の要素での使用例</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <!--リストグループ-->
+                <div class="list-group" id="list-example">
+                    <a href="#list-item-1" class="list-group-item list-group-item-action">コンテンツ1</a>
+                    <a href="#list-item-2" class="list-group-item list-group-item-action">コンテンツ2</a>
+                    <a href="#list-item-3" class="list-group-item list-group-item-action">コンテンツ3</a>
+                    <a href="#list-item-4" class="list-group-item list-group-item-action">コンテンツ4</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <!--コンテンツ-->
+                <div data-spy="scroll" data-target="#list-example" data-offset="0"
+                    class="scrollspy-example border px-1">
+                    <h4 id="list-item-1">コンテンツ1</h4>
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    <h4 id="list-item-2">コンテンツ2</h4>
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    <h4 id="list-item-3">コンテンツ3</h4>
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    <h4 id="list-item-4">コンテンツ4</h4>
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                    ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .scrollspy-example {
+            position: relative;
+            height: 400px;
+            overflow-y: scroll;
+        }
+    </style>
 
-    
 
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
